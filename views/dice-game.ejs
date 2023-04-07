@@ -1,0 +1,89 @@
+<%- include("header")  -%> 
+
+
+
+<div class="container">
+    <section id="settings">
+      <h1 id="dice-game">Dice Game</h1>
+
+      <div class="row ">
+
+            <div class="col-lg-4 player-image-lt">
+                <img class="img-comp img-comp-left" src="" alt="">
+            </div>
+            <div class="col-lg-4 count-bx">
+                <h2 id="counter"></h2>
+                <h2 id="counter-select"><%- playCounter %>  </h2>
+            </div>
+            <div class="col-lg-4 player-image-rt">
+                <img class="img-comp img-comp-right" src="" alt="">
+            </div>
+           
+        
+        </div>
+
+    </section>
+    
+    
+
+    <section id="play-ground">
+      
+        
+        <div class="score-board score-board-left-div score-board-left" id="grounds">
+            <p id="p-score"><%= scoreBoardTitleLeft %></p>
+            <hr>
+            <h4>Last Throw: <b class="lasThrow-L-value"></b></h4>
+            <h3>Points: <b class="points-l"></b> </h3><br>
+        </div>
+            
+    
+        <div class="dice-left dice" id="grounds">
+            <br>
+            <img id="img" class="img1" src="images/dice6.png"><br>
+
+            <div class="btn">        <!-- Control Buttton -->
+                <button class="players players-L"  id="p-1" name="btn" value="0"><%= leftPlayer %></button>
+            </div>
+        </div>
+    
+        <div class="dice-right dice" id="grounds">
+            <br>
+            <img id="img" class="img2" src="images/dice6.png"><br>
+
+            <div class="btn">         <!-- Control Buttton -->
+                <button class="players players-R" id="p-2" name="btn" value="1"><%= rightPlayer %> </button>
+            </div>
+            
+        </div>
+        
+    
+            
+        <div class="score-board score-board-right-div score-board-right" id="grounds">
+            <p id="p-score"><%= scoreBoardTitleRight %></p>
+            <hr>
+            <h4 >Last Throw: <b b class="lasThrow-R-value"> </b>  </h4>
+            <h3>Points: <b class="points-r"></b>  </h3><br>
+        </div>
+    
+            <h3 id="winner"></h3>
+        <br>    
+
+    
+    </section>
+
+    <div class="restart-bx">
+        <form action="/" method="post">
+            <button class="restart">Reset</button>
+        </form>
+        
+    </div>
+  </div>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="javascript/index.js" ></script>
+
+
+
+<%- include("footer")  -%> 

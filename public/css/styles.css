@@ -1,0 +1,256 @@
+.container {
+  background-color: #000000;
+  background-image: url("https://img.freepik.com/free-vector/black-carbon-fiber-texture-pattern-background_1017-33436.jpg?w=996&t=st=1662132705~exp=1662133305~hmac=6477625d0e89b7039561a7094efd3ace3b8777fe234abcccd5e183b4e22bcf81");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-top: 0.5rem;
+  border-radius: 0.4rem;
+
+}
+.counter-div {
+  /* margin-left: 3px;
+  margin-right: 3px; */
+}
+.dice,.score-board {
+  text-align: center;
+  display: inline-block;
+}
+
+.score-board {
+  /* background-color: #6f837c; */
+  opacity:0.8;
+  width: inherit;
+  height: 35%;
+  position: absolute;
+  font-family: sans-serif;
+  margin-top: 4rem;
+  border-radius: 0.4rem;
+}
+
+
+.score-board-left {
+  left: 16.5%;
+}
+
+.score-board-right {
+  right: 15%;
+}
+
+hr {
+  border-color: #fff;
+  border-style: dotted None None;
+  height: 0px;
+  border-width: 3px;
+  /* width: 20%;  */
+}
+
+body {
+  /* background-image: url("https://img.freepik.com/free-vector/abstract-background-with-squares_23-2148995948.jpg?w=900&t=st=1662132142~exp=1662132742~hmac=26d136d99a163d7dc5a11d38b04ca617043eacebe5814e503969cca860319f1e");
+  background-repeat: no-repeat;
+  background-size: 100%; */
+  background-color:#212121;
+  align-content: center;
+
+}
+
+#dice-game,label,h1,#p-score,.vs-p1_p2 {
+
+  margin: 30px;
+  font-family: 'Lobster', cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 5rem;
+  color: #4ECCA3;
+  align-items: center;
+}
+
+#dice-game {
+  background-color: inherit;
+  border-radius: 1rem;
+  font-size: 5rem;
+}
+
+.restart-bx{
+  position: relative;
+  
+  
+}
+
+.restart {
+  width: 10%;
+  height: 10%;
+  margin: 0 10px 0 900px;
+  background-color: rgb(17, 16, 16);
+  background: transparent;
+  color: #4ECCA3;
+  border: 0;
+  border-radius: 0.4rem;
+  font-family: 'Lobster', cursive;
+  font-size: 50px;
+}
+
+.img-comp {
+  width: 4rem;
+  height: 4rem;
+}
+
+.img-comp-left, .img-comp-right{
+  position: relative;
+}
+
+.img-comp-left {
+  right: 5%;
+}
+
+.img-comp-right {
+  left: 5%;
+}
+
+.vs-p1_p2, .err-msg {
+  color: red;
+  font-size: 3rem;
+}
+
+.vs{
+  font-size: 1.5rem;
+}
+
+#p-score{
+  font-size: 1rem;
+  color: yellow;
+  width: 100%;
+  margin-left: 0px;
+}
+
+
+label,input,button, .winner, select {
+  color: #EEEEEE;
+  font-size: 1rem;
+  margin: 20px;
+  /* font-weight: ; */
+}
+
+input,button,select {
+  border-radius: 0.4rem;
+  color: black;
+  margin: auto;
+
+}
+
+button {
+  color:rgb(4, 17, 20);
+  width: 3rem;
+  box-shadow: aliceblue;
+  background-color: #4ECCA3;
+}
+
+
+#cnt {
+  width: 5%;
+  font-family: sans-serif;
+}
+
+.countDown {
+  float: left;
+  margin-left: 5%;
+}
+
+#player {
+  /* width: 10%; */
+  /* font-family: sans-serif; */
+  /* font-size: 1.5rem; */
+  background-color: #212121;
+  color: #4ECCA3;
+  
+  
+}
+
+option {
+  /* background: transparent; */
+  margin: auto;
+}
+
+p {
+  font-size: 2rem;
+  color: #4ECCA3;
+  font-family: 'Indie Flower', cursive;
+  position: relative;
+  margin: auto 50px;
+}
+
+#winner {
+  /* font-family: "montserri"; */
+  font-size: 3rem;
+  color: #FFB344;
+  font-weight: bold;
+}
+
+.players:hover {
+  color: blueviolet;
+  background-color: cornsilk;
+  border-radius: 10px;
+  
+}
+
+.players {
+  width: 100%;
+  height: 2rem;
+}
+
+h4,h3 {
+  color: white;
+  font-size: 1rem;
+}
+
+h2 {
+  color: yellow;
+  text-align: center;
+}
+
+h3 {
+  /* width: 50%; */
+  /* height: 4rem; */
+  text-align: center;
+  margin: 10px 0em auto;
+
+  border-radius: 0.2em;
+}
+
+
+
+img {
+  width: 80%;
+}
+
+footer {
+  /* background-color: #000000; */
+  margin-top: 5%;
+  color: #EEEEEE;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+
+}
+
+
+
+@media (max-width: 1028px) {
+  .container {
+    width: 100%;
+  }
+  #cnt {
+    width: 20%
+  }
+  .restart {
+    /* width:100%; */
+  }
+  #img {
+      width: 50%;
+  }
+  .score-board {
+    margin-top: 0px;
+    width: 20%;
+  }
+
+}
